@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Javascript calculator">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <h2>Basic Calculator</h2><br/>
+    <form action="" id="myform" name="calculator">
+    <input name="screen" disabled; style="width: 593px; height: 120px; text-align: right; background-color: #1F80C9; "><br/>
+    
+    
+        <input type="button" value="&radic;" onclick="calculator.screen.value=Math.sqrt(calculator.screen.value)">
+        <input type="button" value="%" onclick="calculator.screen.value += '%'">
+        <input type="button" value="C" style="background-color: red;"  onclick="calculator.screen.value = ''">
+        <input type="button" value="&larr;" style="background-color: #05E0E9;"  onclick="calculator.screen.value = calculator.screen.value.slice(0,-1)"><br/>
+    
+    <input type="button" value="7" onclick="calculator.screen.value +='7'">
+    <input type="button" value="8" onclick="calculator.screen.value +='8'">
+    <input type="button" value="9" onclick="calculator.screen.value +='9'">
+    <input type="button" value="+" style="background-color: tomato;" onclick="calculator.screen.value +='+'"><br/>
+    
+    <input type="button" value="4" onclick="calculator.screen.value +='4'">
+    <input type="button" value="5" onclick="calculator.screen.value +='5'">
+    <input type="button" value="6" onclick="calculator.screen.value +='6'">
+    <input type="button" value="-" style="background-color: gray;" onclick="calculator.screen.value +='-'"><br/>
+    
+    <input type="button" value="1" onclick="calculator.screen.value +='1'">
+    <input type="button" value="2" onclick="calculator.screen.value +='2'">
+    <input type="button" value="3" onclick="calculator.screen.value +='3'">
+    <input type="button" value="x" style="background-color: #32ab6c;" onclick="calculator.screen.value +='x'"><br/>
+    
+    <input type="button" value="0" onclick="calculator.screen.value +='0'">
+    <input type="button" value="." onclick="calculator.screen.value +='.'">
+    <input type="button" value="/" onclick="calculator.screen.value +='/'">
+    <input type="button" value="=" style="background-color: #FF2768" onclick="calculator.screen.value = eval(calculator.screen.value)"><br/>
+    </form>
+</body>
+</html>
